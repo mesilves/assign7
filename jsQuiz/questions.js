@@ -1,9 +1,12 @@
 class Question {
    constructor (text, choices, answer){
-    this.text = text;
-    this.choices = choices;
-    this.answer = answer;
-}
+	    this.text = text;
+	    this.choices = choices;
+	    this.answer = answer;
+	}
+	isCorrectAnswer(choice){
+   			 return this.answer === choice;
+    }
 }
 
 var questions = [
@@ -12,21 +15,12 @@ new Question("Which language is used for styling web pages?", ["HTML", "JQuery",
 new Question("What has not been covered in PUI lab?", ["HTML", "CSS","Javascript", "Java"], "Java"),
 ];
 
-new Question("Hyper Text Markup Language Stand For?", ["JavaScript", "XHTML","CSS", "HTML"], "HTML")
+
 
 class Quiz {
 		constructor(questions) {
 			this.score = 0;
 			this.questions = questions;
-			this.questionIndex = 0;
-		}	
-}
-
-
-class Quiz {
-		constructor(questions) {
-			this.score = 0;
-	this.questions = questions;
 			this.questionIndex = 0;
 		}			
 
@@ -37,19 +31,22 @@ class Quiz {
 		
 	}
 
-}
-
-isCorrectAnswer(choice){
-   			 return this.answer === choice;
-    		}
-
- guess(answer) {
-    if(this.getQuestion().isCorrectAnswer(answer)) {
-   	 this.score++;
-    		}
+	guess(answer) {
+   		if(this.getQuestion().isCorrectAnswer(answer)) {
+   	 		this.score++;
+    	}
 		
 		this.questionIndex++;
+	}
+
+	isEnded(){
+		return this.questionIndex === this.questions.length;
+	}
+
+
 }
+
+
 
 function guess(id, guess) {
     var button = document.getElementById(id);
@@ -60,7 +57,10 @@ function guess(id, guess) {
 };
 
 function populate() {
-
+	if(quiz.isEnded){
+		showScores();
+	}
+	else{
    	 var element = document.getElementById("question");
    	 element.innerHTML = quiz.getQuestion().text;
  
@@ -70,9 +70,18 @@ function populate() {
    		 var element = document.getElementById("choice" + i);
    		 element.innerHTML = choices[i];
    		 guess("btn" + i, choices[i]);
+   		 console.log("hi")
    	 }
+   	}
  
     
+};
+
+function showScores(){
+	var quizGrade = "<h1>Result</h1>";
+	quizGrade += "<h2 id='score'> Your score: " + quiz.score + "</h2>";
+	var element = document.getElementById("quiz");
+	element.innerHTML = quizGrade;
 };
 
 var quiz = new Quiz(questions);
