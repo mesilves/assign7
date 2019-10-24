@@ -58,7 +58,8 @@ if(addToCart != null){
 		glazeChoice = select.options[select.selectedIndex].text;
 		quantity = quant.options[quant.selectedIndex].text;
 		updateCart(quantity);
-		console.log(glazeChoice, quantity);
+		select.selectedIndex = 0;
+		quant.selectedIndex = 0;
 		localStorage.setItem("newBun", JSON.stringify(new Bun(glazeChoice, quantity)));
 
 	}
