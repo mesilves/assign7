@@ -1,9 +1,15 @@
 
 var glaze = [["None", "no-glaze.jpg"], ["Sugar-Milk", "sugar-milk.jpg"], ["Vanilla-Milk", "vanilla-milk.jpg"], ["Double Chocolate", "double-chocolate.jpg"]]
 class Bun {
-	constructor(glaze, quantity){
-		this.glaze;
-		this.quantity;
+	constructor(image, roll, glaze, quantity){
+		this.image = image;
+		this.roll = roll;
+		this.glaze = glaze;
+		this.quantity = quantity;
+		this.price = function(){
+			console.log(this.quantity);
+			return parseInt(this.quantity) * 3;
+		}
 	}
 }
 
@@ -56,12 +62,21 @@ var addToCart = document.getElementById("cart-button");
 if(addToCart != null){
 	addToCart.onclick = function(){
 		glazeChoice = select.options[select.selectedIndex].text;
+		let image = undefined; 
+		for (i = 0; i < glaze.length; i++){
+			if (glazeChoice === glaze[i][0]){
+				image = glaze[i][1];
+			}
+		}
+		var kindOfBun = "Original";
 		quantity = quant.options[quant.selectedIndex].text;
 		updateCart(quantity);
 		select.selectedIndex = 0;
 		quant.selectedIndex = 0;
-		localStorage.setItem("newBun", JSON.stringify(new Bun(glazeChoice, quantity)));
-
+		let roll = new Bun(image, kindOfBun, glazeChoice, quantity);
+		itemsForCheckout.push(roll);
+		//console.log(itemsForCheckout);
+		localStorage.setItem("rollsToPurchase", JSON.stringify(itemsForCheckout));
 	}
 }
 
@@ -73,18 +88,61 @@ function updateCart(quantity){
 	}
 }
 
-//work in progress for assignment 6B
+//populates cart when window loads, generates table of data
+window.onload = function(){
+	populateCart();
+}
+var cartData = JSON.parse(localStorage.getItem("rollsToPurchase"));
 
-function populateCart(itemsForCheckout){
+function populateCart(){
+	console.log(cartData);
+	var cartDataArray = [];
+	//console.log(cartData);
+	var removeButton = "<span class='remove' onclick='deleteRow(this)'> Remove </span>";
+	for (i = 0; i < cartData.length; i++){
+		let cell = [cartData[i].image, cartData[i].roll, cartData[i].glaze, cartData[i].quantity, "$" + parseInt(cartData[i].quantity) * 3.99, removeButton];
+		cartDataArray.push(cell);
+	}
+
+	//console.log(cartDataArray);
+	//console.log(cartData.length);
 	var cartInfo = document.getElementById("cartInfo");
-	for (i = 0; i < itemsForCheckout.length; i++){
+	for (i = 0; i < cartDataArray.length; i++){
 		var R = document.createElement("tr");
-		for(j = 0; i < itemsForCheckout[i].length; i++){
+		for(j = 0; j < cartDataArray[i].length; j++){
 			var C = document.createElement("td");
-			C.innherHTML = itemsForCheckout[i][j];
+			if(j === 0){
+				C.innerHTML = "<img src='"+cartDataArray[i][j]+"' width='100px' height='100px'>";	
+			} else if(j === cartDataArray[i].length - 1){
+				C.innerHTML = cartDataArray[i][j];
+			}
+			else{
+			C.innerText = cartDataArray[i][j];
+			}
 			R.appendChild(C);
 		}
+		//console.log(R);
+		cartInfo.appendChild(R);
 	}
+}
+
+
+//Removes elements from cart and local storage
+
+var remove = document.getElementsByClassName("remove");
+
+
+
+function deleteRow(remove) {
+    var i = remove.parentNode.parentNode.rowIndex;
+    console.log(i);
+    removeItem(i);
+    document.getElementById("cartInfo").deleteRow(i);
+}
+
+function removeItem(i) {
+    var updatedCart = cartData.splice(i-1, 1);
+    localStorage.setItem("rollsToPurchase", JSON.stringify(cartData));
 }
 // function updatePrice(changeQuant){
 // 	var price = document.getElementById("price");
