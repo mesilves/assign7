@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/PUIFinal/static/css/main.f0984ad4.chunk.css",
+    "main.js": "/PUIFinal/static/js/main.e2dab24d.chunk.js",
+    "main.js.map": "/PUIFinal/static/js/main.e2dab24d.chunk.js.map",
+    "runtime-main.js": "/PUIFinal/static/js/runtime-main.221499cc.js",
+    "runtime-main.js.map": "/PUIFinal/static/js/runtime-main.221499cc.js.map",
+    "static/css/2.833dd627.chunk.css": "/PUIFinal/static/css/2.833dd627.chunk.css",
+    "static/js/2.10f2fbe6.chunk.js": "/PUIFinal/static/js/2.10f2fbe6.chunk.js",
+    "static/js/2.10f2fbe6.chunk.js.map": "/PUIFinal/static/js/2.10f2fbe6.chunk.js.map",
+    "index.html": "/PUIFinal/index.html",
+    "precache-manifest.e1fc026b47dec0c8e2e3338cf1f1ff02.js": "/PUIFinal/precache-manifest.e1fc026b47dec0c8e2e3338cf1f1ff02.js",
+    "service-worker.js": "/PUIFinal/service-worker.js",
+    "static/css/2.833dd627.chunk.css.map": "/PUIFinal/static/css/2.833dd627.chunk.css.map",
+    "static/css/main.f0984ad4.chunk.css.map": "/PUIFinal/static/css/main.f0984ad4.chunk.css.map",
+    "static/media/Igor-Dyatlov.jpg": "/PUIFinal/static/media/Igor-Dyatlov.c2ccf976.jpg",
+    "static/media/aleksander-kolevatov.jpg": "/PUIFinal/static/media/aleksander-kolevatov.911edbf5.jpg",
+    "static/media/index.css": "/PUIFinal/static/media/background-mountains.68146cf6.jpg",
+    "static/media/lyudmila-dubinina.jpg": "/PUIFinal/static/media/lyudmila-dubinina.4c4cff36.jpg",
+    "static/media/nikolay-brignolle.jpg": "/PUIFinal/static/media/nikolay-brignolle.b5cf7076.jpg",
+    "static/media/rustem-slobodin.jpg": "/PUIFinal/static/media/rustem-slobodin.6650a220.jpg",
+    "static/media/semyon-zolotaryov.jpg": "/PUIFinal/static/media/semyon-zolotaryov.e30d3fc8.jpg",
+    "static/media/star-wars-logo.png": "/PUIFinal/static/media/star-wars-logo.a6a39bcc.png",
+    "static/media/yuri-doroshenko.jpg": "/PUIFinal/static/media/yuri-doroshenko.9cf22855.jpg",
+    "static/media/yuri-krivonischenko.jpg": "/PUIFinal/static/media/yuri-krivonischenko.e1792171.jpg",
+    "static/media/yuri-yudin.jpg": "/PUIFinal/static/media/yuri-yudin.fb2f3d5e.jpg",
+    "static/media/zinaida-kolmogorova.jpg": "/PUIFinal/static/media/zinaida-kolmogorova.469e12a0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.221499cc.js",
+    "static/css/2.833dd627.chunk.css",
+    "static/js/2.10f2fbe6.chunk.js",
+    "static/css/main.f0984ad4.chunk.css",
+    "static/js/main.e2dab24d.chunk.js"
+  ]
+}
