@@ -1,0 +1,18 @@
+.one{
+  background-color: rgba(136,167,174, 0.7);
+  text-align: center;
+
+}
+
+.textContainer{
+  margin: auto;
+  width: 80%;
+
+    flex-direction: row;
+    justify-content: center;
+
+}
+.goal{
+  display: flex;
+  padding: 20px;
+}

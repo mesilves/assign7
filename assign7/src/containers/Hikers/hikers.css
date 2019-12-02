@@ -1,0 +1,40 @@
+.first{
+  background-color: rgba(136,167,174, 0.7);
+
+}
+.goal{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+.text{
+  width: 50%;
+}
+.second{
+  background-color: rgba(61,117,169,0.7);
+}
+
+.third{
+  background-color: rgba(158,136,174, 0.7);
+}
+
+.Hikecontainer{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.BannerText {
+  color: #000;
+  font-size: 6rem;
+  user-select: none;
+  padding-top: 5px;
+}
+
+.img-hover-zoom{
+  transition: transform .5s ease;
+}
+.img-hover-zoom:hover {
+  transform: scale(1.1);
+}
