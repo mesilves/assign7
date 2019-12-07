@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/assign7/static/css/main.4d655e9d.chunk.css",
+    "main.css": "/assign7/static/css/main.754b83d0.chunk.css",
     "main.js": "/assign7/static/js/main.ca0014e4.chunk.js",
     "main.js.map": "/assign7/static/js/main.ca0014e4.chunk.js.map",
     "runtime-main.js": "/assign7/static/js/runtime-main.0caa404f.js",
@@ -9,10 +9,10 @@
     "static/js/2.e4a5d86f.chunk.js": "/assign7/static/js/2.e4a5d86f.chunk.js",
     "static/js/2.e4a5d86f.chunk.js.map": "/assign7/static/js/2.e4a5d86f.chunk.js.map",
     "index.html": "/assign7/index.html",
-    "precache-manifest.242f419ef7e2e986e2ad9a59c4d592a1.js": "/assign7/precache-manifest.242f419ef7e2e986e2ad9a59c4d592a1.js",
+    "precache-manifest.5afb32edf0ef189d62a4cd3f47724675.js": "/assign7/precache-manifest.5afb32edf0ef189d62a4cd3f47724675.js",
     "service-worker.js": "/assign7/service-worker.js",
     "static/css/2.833dd627.chunk.css.map": "/assign7/static/css/2.833dd627.chunk.css.map",
-    "static/css/main.4d655e9d.chunk.css.map": "/assign7/static/css/main.4d655e9d.chunk.css.map",
+    "static/css/main.754b83d0.chunk.css.map": "/assign7/static/css/main.754b83d0.chunk.css.map",
     "static/media/Igor-Dyatlov.jpg": "/assign7/static/media/Igor-Dyatlov.1f864625.jpg",
     "static/media/aleksander-kolevatov.jpg": "/assign7/static/media/aleksander-kolevatov.e99da20e.jpg",
     "static/media/index.css": "/assign7/static/media/background-mountains.68146cf6.jpg",
@@ -32,7 +32,7 @@
     "static/js/runtime-main.0caa404f.js",
     "static/css/2.833dd627.chunk.css",
     "static/js/2.e4a5d86f.chunk.js",
-    "static/css/main.4d655e9d.chunk.css",
+    "static/css/main.754b83d0.chunk.css",
     "static/js/main.ca0014e4.chunk.js"
   ]
 }
