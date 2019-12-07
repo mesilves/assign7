@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fdb888aecc3472911da667beebce956e",
+    "revision": "79d12a88726bb91265d1fbb98ac69123",
     "url": "/assign7/index.html"
   },
   {
-    "revision": "90fecccc08136539d2bf",
+    "revision": "45378b98846cfaf80223",
     "url": "/assign7/static/css/2.833dd627.chunk.css"
   },
   {
-    "revision": "fe65b3fd3bcdffa370cb",
-    "url": "/assign7/static/css/main.53f5b466.chunk.css"
+    "revision": "0be2163beac71f7e5759",
+    "url": "/assign7/static/css/main.74d04c93.chunk.css"
   },
   {
-    "revision": "90fecccc08136539d2bf",
-    "url": "/assign7/static/js/2.a94472ee.chunk.js"
+    "revision": "45378b98846cfaf80223",
+    "url": "/assign7/static/js/2.e4a5d86f.chunk.js"
   },
   {
-    "revision": "fe65b3fd3bcdffa370cb",
-    "url": "/assign7/static/js/main.3206cc12.chunk.js"
+    "revision": "0be2163beac71f7e5759",
+    "url": "/assign7/static/js/main.ca0014e4.chunk.js"
   },
   {
     "revision": "2903719f0c81b16c8ae4",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b1e37b62f531ba9874c00c2a8ce708c2",
     "url": "/assign7/static/media/nikolay-brignolle.b1e37b62.jpg"
+  },
+  {
+    "revision": "e117771aa6f01f41a8cbad236bc31e8c",
+    "url": "/assign7/static/media/reports.e117771a.jpg"
   },
   {
     "revision": "11b6880c3986ebc40c885736ac2e93d3",
